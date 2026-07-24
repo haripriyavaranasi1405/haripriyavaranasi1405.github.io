@@ -90,7 +90,7 @@
         </div>
         <div class="stat-list">
           <div class="stat"><div class="num">16M+</div><div class="label">complaint records analyzed (CFPB)</div></div>
-          <div class="stat"><div class="num">3,000+</div><div class="label">US counties integrated (EPA · CDC · Census)</div></div>
+          <div class="stat"><div class="num">2024</div><div class="label">EPA daily AQI dataset year</div></div>
           <div class="stat"><div class="num">10</div><div class="label">federal data sources in one pipeline</div></div>
         </div>
       </div>
@@ -117,7 +117,7 @@
         <div class="tl-item">
           <div class="tl-head">
             <div><span class="tl-role">Graduate Research &amp; Teaching Assistant</span> <span class="sep">·</span> <span class="tl-org">George Mason University</span></div>
-            <div class="tl-meta">May 2025 – May 2026 · Fairfax, VA</div>
+            <div class="tl-meta">Aug 2024 – May 2026 · Fairfax, VA</div>
           </div>
           <ul class="tl-list">
             <li>Reviewed and assessed 40+ graduate-level analytics projects spanning preprocessing, feature engineering, and model evaluation.</li>
@@ -141,7 +141,7 @@
         <div class="tl-item">
           <div class="tl-head">
             <div><span class="tl-role">AWS Cloud Intern</span> <span class="sep">·</span> <span class="tl-org">BrainOVision</span></div>
-            <div class="tl-meta">Jan 2023 – Jul 2023 · Hyderabad, India</div>
+            <div class="tl-meta">Jul 2022 – Jul 2023 · Hyderabad, India</div>
           </div>
           <ul class="tl-list">
             <li>Completed hands-on AWS training and project work using S3, EC2, IAM, Lambda, and RDS.</li>
@@ -179,18 +179,19 @@
 
         <article class="card">
           <div class="card-top">
-            <h3 class="card-title">US Air Quality &amp; Community Health Risk Platform</h3>
-            <span class="card-date">Apr 2026</span>
+            <h3 class="card-title">US Air Quality Analytics Pipeline</h3>
+            <span class="card-date">Jul 2026 · EPA 2024 data · Tableau dashboard</span>
           </div>
           <div class="kpi-row">
-            <span class="kpi">3,000+ counties</span>
+            <span class="kpi">74%+ "Good" county-days</span>
           </div>
           <ul class="card-list">
-            <li>Integrated EPA, CDC, and Census API data across 3,000+ counties into a standardized master dataset.</li>
-            <li>Built automated ingestion and validation workflows with GitHub Actions and AWS S3 for county-level analytics.</li>
+            <li>Built an end-to-end pipeline ingesting EPA Daily AQI by County (2024) data, cleaning it with Python/pandas and storing it in AWS S3 via Boto3.</li>
+            <li>Connected processed outputs to a Tableau Public dashboard with maps, trend charts, and county-ranking views.</li>
+            <li>Found California held 6 of the 10 most-polluted counties (San Bernardino, ~103 avg AQI); 74%+ of county-days rated "Good"; validated a legitimate 1,513 AQI outlier in Essex County, MA rather than discarding it.</li>
           </ul>
           <div class="tag-row">
-            <span class="tag">Python</span><span class="tag">AWS S3</span><span class="tag">GitHub Actions</span><span class="tag">Streamlit</span><span class="tag">EPA / CDC / Census APIs</span>
+            <span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Boto3</span><span class="tag">AWS S3</span><span class="tag">Tableau Public</span><span class="tag">GitHub Actions</span>
           </div>
         </article>
 
@@ -213,18 +214,19 @@
 
         <article class="card">
           <div class="card-top">
-            <h3 class="card-title">Health Risk Analytics: Classification &amp; Clustering</h3>
-            <span class="card-date">Oct 2024</span>
+            <h3 class="card-title">Obesity Level Prediction Using Behavioral, Dietary, and Physical Activity Data</h3>
+            <span class="card-date">Dec 2025 · 0.99 macro-F1</span>
           </div>
           <div class="kpi-row">
-            <span class="kpi">K-Means + PCA</span>
+            <span class="kpi">0.990 macro-F1 (Random Forest)</span>
           </div>
           <ul class="card-list">
-            <li>Applied K-Means and PCA to segment patient populations and surface high-risk groups.</li>
-            <li>Resolved class imbalance via upsampling and weighted models; evaluated classifiers on accuracy, precision, recall, and F1.</li>
+            <li>Built a 7-class obesity-level classifier (UCI dataset, 2,111 records) comparing Logistic Regression, Random Forest, and XGBoost.</li>
+            <li>Found technology use and physical activity alone were weak predictors (0.18 macro-F1); adding BMI and lifestyle features pushed performance to 0.92–0.99.</li>
+            <li>Random Forest performed best at 0.990 macro-F1, with BMI and weight as the top feature importances.</li>
           </ul>
           <div class="tag-row">
-            <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Logistic Regression</span><span class="tag">Random Forest</span><span class="tag">K-Means</span><span class="tag">PCA</span>
+            <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">XGBoost</span><span class="tag">Logistic Regression</span><span class="tag">Random Forest</span><span class="tag">PCA</span>
           </div>
         </article>
 
