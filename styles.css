@@ -554,6 +554,11 @@ h1.hero-title .accent { color: var(--accent); }
   box-shadow: var(--shadow);
 }
 
+.card-flagship {
+  grid-column: 1 / -1;
+  border-color: var(--accent);
+}
+
 .card-top {
   display: flex;
   justify-content: space-between;
