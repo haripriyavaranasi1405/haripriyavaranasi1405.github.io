@@ -98,6 +98,8 @@ a {
 /* ---------- layout shell ---------- */
 
 .shell {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 15rem minmax(0, 1fr);
   min-height: 100vh;
@@ -317,15 +319,14 @@ h2.section-title {
 }
 
 #hero-canvas {
-  position: absolute;
+  position: fixed;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 0;
   opacity: 0.55;
+  pointer-events: none;
 }
-:root[data-theme="light"] #hero-canvas,
-@media (prefers-color-scheme: light) { }
 
 .hero-inner {
   position: relative;

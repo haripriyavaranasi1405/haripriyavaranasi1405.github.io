@@ -104,8 +104,8 @@
 
   function resize() {
     dpr = Math.min(window.devicePixelRatio || 1, 2);
-    width = canvas.clientWidth = canvas.parentElement.clientWidth;
-    height = canvas.clientHeight = canvas.parentElement.clientHeight;
+    width = canvas.clientWidth = window.innerWidth;
+    height = canvas.clientHeight = window.innerHeight;
     canvas.width = width * dpr;
     canvas.height = height * dpr;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
